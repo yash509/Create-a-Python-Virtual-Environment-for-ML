@@ -1,0 +1,36 @@
+Ques:-
+
+The xFusionCorp Industries data science team needs a standardised Python environment for their new ML project. Set up a virtual environment with the required ML libraries on the controlplane host.
+
+1. Create a Python virtual environment named ml-env under /root/code/ using python3 -m venv.
+
+2. Activate the environment and install the following packages: numpy, pandas, scikit-learn, and matplotlib.
+
+3. Generate a requirements.txt file using pip freeze and save it at /root/code/requirements.txt.
+
+
+
+
+Soln:-
+
+Step 1:- Create virtual environment
+
+python3 -m venv /root/code/ml-env
+
+
+
+Step 2:- Activate environment
+
+source /root/code/ml-env/bin/activate
+
+
+
+Step 3:- Install ML libraries (Inside the activated environment, run:)
+
+pip install numpy pandas scikit-learn matplotlib
+
+
+
+Step 4:- Generate requirements file
+
+pip freeze > /root/code/requirements.txt
